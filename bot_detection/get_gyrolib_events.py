@@ -59,10 +59,5 @@ def get_data(BUCKETS: int):
 	with open('raw_data/mints.pkl', 'wb') as handle:
 		pickle.dump(flat_mints, handle, protocol=pickle.HIGHEST_PROTOCOL)
 	
-	# flat_redeems = [item for sublist in redeem_master for item in sublist]
-	# with open('raw_data/redeems.pkl', 'wb') as handle:
-	# 	pickle.dump(flat_redeems, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-
 if __name__ == "__main__":
-    get_data(2000)
+    get_data(10000)

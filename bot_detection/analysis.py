@@ -1,55 +1,56 @@
+import os
 import pickle
+from typing import final
 
 import pandas as pd
+from dotenv import load_dotenv
+from web3 import Web3
 
-with open('raw_data/mints.pkl', 'rb') as handle:
-    mints = pickle.load(handle)
+import constants
 
-with open('raw_data/redeems.pkl', 'rb') as handle:
-    redeems = pickle.load(handle)
+load_dotenv()
 
-clean = []
-for mint in mints:
-    clean_dict = {}
-    clean_dict["caller_address"] = mint["args"]["minter"]
-    clean_dict["amount"] = mint["args"]["amount"]
-    clean_dict["event"] = mint["event"]
-    clean_dict["log_index"] = mint["logIndex"]
-    clean_dict["transaction_index"] = mint["transactionIndex"]
-    clean_dict["transaction_hash"] = mint["transactionHash"]
-    clean_dict["block_hash"] = mint["blockHash"]
-    clean_dict["block_number"] = mint["blockNumber"]
-    clean.append(clean_dict)
+web3 = Web3(Web3.WebsocketProvider("wss://kovan.infura.io/ws/v3/{}".format(os.environ.get("INFURA_API_KEY"))))
 
-mints_df = pd.DataFrame(clean)
+def get_datetime_from_block(block_number: int):
+    timestamp = web3.eth.get_block(block_number).timestamp
+    return pd.to_datetime(timestamp, unit = "s")
 
-clean = []
-for redeem in redeems:
-    clean_dict = {}
-    clean_dict["caller_address"] = redeem["args"]["redeemer"]
-    clean_dict["amount"] = redeem["args"]["amount"]
-    clean_dict["event"] = redeem["event"]
-    clean_dict["log_index"] = redeem["logIndex"]
-    clean_dict["transaction_index"] = redeem["transactionIndex"]
-    clean_dict["transaction_hash"] = redeem["transactionHash"]
-    clean_dict["block_hash"] = redeem["blockHash"]
-    clean_dict["block_number"] = redeem["blockNumber"]
-    clean.append(clean_dict)
+def make_final_df():
 
-redeems_df = pd.DataFrame(clean)
+    with open('raw_data/mints.pkl', 'rb') as handle:
+        mints = pickle.load(handle)
 
-master_df = pd.concat([mints_df, redeems_df])
+    clean = []
+    for mint in mints:
+        clean_dict = {}
+        clean_dict["caller_address"] = mint["args"]["minter"].lower()
+        clean_dict["amount"] = mint["args"]["amount"]
+        clean_dict["event"] = mint["event"]
+        clean_dict["log_index"] = mint["logIndex"]
+        clean_dict["transaction_index"] = mint["transactionIndex"]
+        clean_dict["transaction_hash"] = mint["transactionHash"]
+        clean_dict["block_hash"] = mint["blockHash"]
+        clean_dict["block_number"] = mint["blockNumber"]
+        clean.append(clean_dict)
 
-bot_addresses = pd.read_csv("bot_addresses.csv", names = ['addresses', 'isbot'])
-bot_addresses=bot_addresses[bot_addresses['isbot']==True]
+    mints_df = pd.DataFrame(clean)
 
-bot_address_list = list(bot_addresses['addresses'])
+    bot_addresses = pd.read_csv("raw_data/bot_addresses.csv", names = ["address", "is_bot"])
+    real_addresses = list(bot_addresses[bot_addresses["is_bot"] == False]["address"])
+    bot_filter = mints_df.caller_address.isin(real_addresses)
+    clean_df = mints_df[bot_filter]
 
-bot_filter = ~master_df.caller_address.isin(bot_address_list)
+    sorted_df = clean_df.sort_values(by=["block_number"])
+    final_df = sorted_df.drop_duplicates(subset=["caller_address"]).reset_index(drop=True)
 
-clean_df = master_df[bot_filter]
+    final_df["datetime"] = final_df["block_number"].apply(get_datetime_from_block)
 
-KNOWN_BOT_ADD = '0x4c39D086deA12Cf50D68F352689041263D74D965'
+    final_df["unique_mint_number"] = final_df.index +1
 
+    final_df = final_df.set_index(final_df["block_number"])
 
+    final_df.to_csv("unique_mint_transactions.csv")
 
+if __name__ == "__main__":
+    make_final_df()

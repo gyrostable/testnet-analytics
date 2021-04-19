@@ -9,7 +9,7 @@ setup(
    install_requires=['ratelimit',
                      'pandas',
                      'web3',
-                     'dotenv'
+                     'python-dotenv'
    
    ],
 )
