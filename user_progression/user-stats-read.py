@@ -1,6 +1,4 @@
-from distutils.command.clean import clean
 import pickle as pkl
-from unittest.case import DIFF_OMITTED
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -18,6 +16,7 @@ df = pd.DataFrame(object)
 # ------------------------------------------
 #   make lists with relevant, decoded data
 # ------------------------------------------
+
 
 help_challenge = []
 help_challenger = []
@@ -64,8 +63,7 @@ REMAP_CLASS = {
     'discord': 'challenge8-contributors',
     'megaWhitelist': 'challenge8-defiwl',
     'minecraft': 'challenge7-minecraft',
-    'goldfinchKYC': 'challenge8-goldfinch',
-    'sthWasForgotten': 'error'}
+    'goldfinchKYC': 'challenge8-goldfinch'}
 
 clean_df['challenge'] = clean_df['challenge'].map(REMAP_CLASS)
 
