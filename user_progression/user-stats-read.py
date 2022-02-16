@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # ---------------------
 
 
-with open("/Users/jonas/python/old/challengers.pkl", "rb") as f:
+with open("/Users/jonas/Workspace/Gyroscope/testnet-analytics-repo/testnet-analytics/user_progression/challengers.pkl", "rb") as f:
     object = pkl.load(f)
 df = pd.DataFrame(object)
 
@@ -40,11 +40,11 @@ clean_df = pd.DataFrame(zip(list_challenger, list_challenge), columns=['user_add
 REMAP_CLASS = {
     'poap': 'challenge1',
     'sybilList': 'challenge2',
-    'bankless': 'challenge4',
+    'bankless': 'challenge4-virtual',
     'govVoters': 'challenge3',
-    'communityCalls': 'challenge4',
-    'highInvolvement': 'challenge4',
-    "additionalPOAPs": 'challenge4',
+    'communityCalls': 'challenge4-call',
+    'highInvolvement': 'challenge4-strong',
+    "additionalPOAPs": 'challenge4-virtual',
     'github': 'challenge6-github',
     'phone': 'challenge6-phone',
     'twitter': 'challenge6-twitter',
@@ -84,8 +84,8 @@ grouped_df = clean_df.groupby('user_address')['challenge'].apply(
 
 def count_challenges(df: pd.DataFrame):
 
-    counted_df = {'address': [], 'ch_1': [], 'ch_2': [], 'ch_3': [], 'ch_4': [
-    ], 'ch_5': [], 'ch_6_twitter': [], 'ch_6_github': [
+    counted_df = {'address': [], 'ch_1': [], 'ch_2': [], 'ch_3': [], 'ch_4_call': [
+    ], 'ch_4_strong': [],'ch_4_virtual': [],'ch_5': [], 'ch_6_twitter': [], 'ch_6_github': [
     ], 'ch_6_phone': [], 'ch_7_stack': [], 'ch_7_git': [], 'ch_7_twitter': [], 'ch_7_reddit': [], 'ch_7_minecraft': [
     ], 'ch_8_goldfinch': [], 'ch_8_defiwl': [], 'ch_8_contributors': [], 'ch_8_coinbase': [], 'privPolicy': []}
 
@@ -97,27 +97,25 @@ def count_challenges(df: pd.DataFrame):
         counted_df['ch_1'].append(challenges.count('challenge1'))
         counted_df['ch_2'].append(challenges.count('challenge2'))
         counted_df['ch_3'].append(challenges.count('challenge3'))
-        counted_df['ch_4'].append(challenges.count('challenge4'))
+        counted_df['ch_4_call'].append(challenges.count('challenge4-call'))
+        counted_df['ch_4_strong'].append(challenges.count('challenge4-strong'))
+        counted_df['ch_4_virtual'].append(challenges.count('challenge4-virtual'))
+
+        
         counted_df['ch_5'].append(challenges.count('challenge5'))
-        counted_df['ch_6_twitter'].append(
-            challenges.count('challenge6-twitter'))
+        counted_df['ch_6_twitter'].append(challenges.count('challenge6-twitter'))
         counted_df['ch_6_github'].append(challenges.count('challenge6-github'))
         counted_df['ch_6_phone'].append(challenges.count('challenge6-phone'))
         counted_df['ch_7_stack'].append(challenges.count('challenge7-stack'))
         counted_df['ch_7_git'].append(challenges.count('challenge7-git'))
-        counted_df['ch_7_twitter'].append(
-            challenges.count('challenge7-twitter'))
+        counted_df['ch_7_twitter'].append(challenges.count('challenge7-twitter'))
         counted_df['ch_7_reddit'].append(challenges.count('challenge7-reddit'))
-        counted_df['ch_7_minecraft'].append(
-            challenges.count('challenge7-minecraft'))
+        counted_df['ch_7_minecraft'].append(challenges.count('challenge7-minecraft'))
 
-        counted_df['ch_8_goldfinch'].append(
-            challenges.count('challenge8-goldfinch'))
+        counted_df['ch_8_goldfinch'].append(challenges.count('challenge8-goldfinch'))
         counted_df['ch_8_defiwl'].append(challenges.count('challenge8-defiwl'))
-        counted_df['ch_8_contributors'].append(
-            challenges.count('challenge8-contributors'))
-        counted_df['ch_8_coinbase'].append(
-            challenges.count('challenge8-coinbase'))
+        counted_df['ch_8_contributors'].append(challenges.count('challenge8-contributors'))
+        counted_df['ch_8_coinbase'].append(challenges.count('challenge8-coinbase'))
 
         counted_df['privPolicy'].append(challenges.count('privPolicy'))
 
@@ -131,7 +129,7 @@ def count_challenges(df: pd.DataFrame):
 
 def apply_weights(df: pd.DataFrame):
     weighted_df = {}
-    weights = {'address': [], 'w1': 3, 'w2': 2, 'w3': 2, 'w4': 1, 'w5': 3,
+    weights = {'address': [], 'w1': 3, 'w2': 2, 'w3': 2, 'w4_call': 2,'w4_strong': 3,'w4_virtual': 1, 'w5': 3,
                'w6_twitter': 2, 'w6_github': 2, 'w6_phone': 3, 'w7_stack': 3,
                'w7_git': 2, 'w7_twitter': 2, 'w7_reddit': 2, 'w7_minecraft': 1,
                'w8_goldfinch': 3, 'w8_defiwl': 2, 'w8_contributors': 2, 'w8_coinbase': 3, 'wprivPolicy': 1}
@@ -140,7 +138,10 @@ def apply_weights(df: pd.DataFrame):
     weighted_df['w_ch_1'] = df['ch_1']*weights['w1']
     weighted_df['w_ch_2'] = df['ch_2']*weights['w2']
     weighted_df['w_ch_3'] = df['ch_3']*weights['w3']
-    weighted_df['w_ch_4'] = df['ch_4']*weights['w4']
+    weighted_df['w_ch_4_call'] = df['ch_4_call']*weights['w4_call']
+    weighted_df['w_ch_4_strong'] = df['ch_4_strong']*weights['w4_strong']
+    weighted_df['w_ch_4_virtual'] = df['ch_4_virtual']*weights['w4_virtual']
+    
     weighted_df['w_ch_5'] = df['ch_5']*weights['w5']
 
     weighted_df['w_ch_6_twitter'] = df['ch_6_twitter']*weights['w6_twitter']
@@ -206,7 +207,7 @@ def main_function(df: pd.DataFrame):
 if __name__ == '__main__':
     result = main_function(grouped_df)
     # print(result)
-    # result.to_csv("/Users/jonas/Workspace/Local/Drop/channel-progression-stats.csv")
+    result.to_csv("/Users/jonas/Workspace/Local/Drop/channel-progression-stats.csv")
 
 # pivot table with scores by address count
     overview = result.pivot_table(columns=['score'], aggfunc='size')
