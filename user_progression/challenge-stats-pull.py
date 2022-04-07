@@ -9,7 +9,7 @@ from web3 import Web3
 from dotenv import load_dotenv
 
 
-# establish blockchain connection
+# establish connection
 load_dotenv()
 infura_id = os.getenv("INFURA_API_ID")
 web3 = Web3(Web3.WebsocketProvider(
@@ -21,12 +21,9 @@ challenges_abi = json.loads('[{"anonymous":false,"inputs":[{"indexed":true,"inte
 
 contract = web3.eth.contract(address=challenges, abi=challenges_abi)
 
-#  define function
-
-T = TypeVar('T')
 
 #  define time periods
-
+T = TypeVar('T')
 
 def generate_buckets(start: int, end: int, buckets: int) -> Iterable[int]:
     diff = (int(end) - int(start)) / buckets
@@ -41,8 +38,6 @@ def pairwise(iterable: Iterable[T]) -> Iterable[Tuple[T, T]]:
     return zip(a, b)
 
 #  request data in time periods
-
-
 def get_data(BUCKETS: int):
     """
     :START_BLOCK: starting range of blocks
@@ -74,7 +69,6 @@ def get_data(BUCKETS: int):
     with open('/Users/jonas/Workspace/Local/Drop/challengers.pkl', 'wb') as handle:
         pkl.dump(flat_challengers, handle, protocol=pkl.HIGHEST_PROTOCOL)
 
-# protected start
-
+# start
 if __name__ == "__main__":
-    get_data(1000)
+    get_data(5000)
