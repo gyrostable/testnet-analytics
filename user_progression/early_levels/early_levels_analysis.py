@@ -14,7 +14,6 @@ with open("/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/lvl1_supply.p
 with open("/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/lvl2.csv") as g:
     raw_level_2 = pd.DataFrame(csv.reader(g))
 
-
 # level 25 - registration events
 # 0x028437cF5dB90B367e392Ee971639824684D8295
 with open("/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/lvl25.csv") as h:
@@ -119,11 +118,11 @@ if __name__ == '__main__':
     # print(final.groupby('lvl1').size().reset_index(name='frequency'))
     # print(final.groupby('lvl2').size().reset_index(name='frequency'))
     # print(final.groupby('lvl25').size().reset_index(name='frequency'))
-    print(final.groupby('lvl3').size().reset_index(name='frequency'))
+    # print(final.groupby('lvl3').size().reset_index(name='frequency'))
 
 
     
     # final.to_clipboard()
     # output
     final.to_csv('/Users/jonas/Workspace/Local/Drop/results/early_levels_stats.csv')
-    print('yay')
+    print('done')

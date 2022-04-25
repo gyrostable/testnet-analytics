@@ -1,6 +1,4 @@
-from distutils.command.clean import clean
 import pickle as pkl
-from tokenize import group
 import pandas as pd
 import numpy as np
 
@@ -32,8 +30,8 @@ def initialize (df:pd.DataFrame):
     
     # ensure format consistency of address
     zipped_df['user_address'] = zipped_df['user_address'].str.lower()
-    zipped_df['correct_address'] = zipped_df['user_address'].map(len)    
-    clean_df = zipped_df[zipped_df['correct_address']==42].drop('correct_address',axis=1)
+    zipped_df['address_len'] = zipped_df['user_address'].map(len)    
+    clean_df = zipped_df[zipped_df['address_len']==42].drop('address_len',axis=1)
     
     return pd.DataFrame(clean_df)
 
@@ -168,7 +166,7 @@ def format_lvl4_data(df: pd.DataFrame):
             
     return pd.DataFrame(df).drop('ch_4_scores',axis=1)
 
-# replace 0 with 1 and then fill nans with 0
+# replace 0 with 1 (for invalid & privPolicy) and then fill nans with 0
 def replace_nans(df:pd.DataFrame):
     
     transformed_df = df.replace(0,1)
@@ -177,50 +175,54 @@ def replace_nans(df:pd.DataFrame):
     cols = binaried_df.columns
     no_nan_df = binaried_df[cols[1:]].apply(np.int64)
     no_nan_df.insert(0,'address',binaried_df['address'])
+    
+    # optional: drop columns or keep as activity receipt
+    no_nan_df_smaller = no_nan_df.drop(['privPolicy','invalid'], axis=1) 
         
-    return pd.DataFrame(no_nan_df)
+    return pd.DataFrame(no_nan_df_smaller)
 
-# apply sybil challenge weights --- load operational_df; return weighted_df
-def apply_weights(df: pd.DataFrame):
+# rescored sybil challenge results --- load operational_df; return rescored_df
+def rescore_points(df: pd.DataFrame):
+        
+    df.loc[df['ch_1'] > 0, 'ch_1'] = 4
+    df.loc[df['ch_2'] > 0, 'ch_2'] = 3
+    df.loc[df['ch_3'] > 0, 'ch_3'] = 2
     
-    weighted_df = {}
-    weights = {'address': [], 'w1': 3, 'w2': 2, 'w3': 2, 'w4_weak': 1,'w4_strong': 3, 'w4_comm': 2, 
-               'w5': 3, 'w6_twitter': 2, 'w6_github': 2, 'w6_phone': 3, 'w7_stack': 3, 'w7_git': 2, 
-               'w7_twitter': 2, 'w7_reddit': 2, 'w7_minecraft': 1, 'w8_goldfinch': 3, 'w8_defiwl': 2,
-               'w8_contributors': 2, 'w8_coinbase': 3, 'wprivPolicy': 1}
-
-    weighted_df['address'] = df['address']
-    weighted_df['w_ch_1'] = df['ch_1']*weights['w1']
-    weighted_df['w_ch_2'] = df['ch_2']*weights['w2']
-    weighted_df['w_ch_3'] = df['ch_3']*weights['w3']  
+    df.loc[df['ch_4_comm'] > 0, 'ch_4_comm'] = 2
+    df.loc[df['ch_4_strong'] > 0, 'ch_4_strong'] = 3
+    df.loc[df['ch_4_weak'] > 0, 'ch_4_weak'] = 1
     
-    weighted_df['w_ch_4_weak'] = df['ch_4_weak']*weights['w4_weak']
-    weighted_df['w_ch_4_strong'] = df['ch_4_strong']*weights['w4_strong']
-    weighted_df['w_ch_4_comm'] = df['ch_4_comm']*weights['w4_comm']
-
-    weighted_df['w_ch_5'] = df['ch_5']*weights['w5']
-
-    weighted_df['w_ch_6_twitter'] = df['ch_6_twitter']*weights['w6_twitter']
-    weighted_df['w_ch_6_github'] = df['ch_6_github']*weights['w6_github']
-    weighted_df['w_ch_6_phone'] = df['ch_6_phone']*weights['w6_phone']
-
-    weighted_df['w_ch_7_stack'] = df['ch_7_stack']*weights['w7_stack']
-    weighted_df['w_ch_7_git'] = df['ch_7_git']*weights['w7_git']
-    weighted_df['w_ch_7_twitter'] = df['ch_7_twitter']*weights['w7_twitter']
-    weighted_df['w_ch_7_reddit'] = df['ch_7_reddit']*weights['w7_reddit']
-    weighted_df['w_ch_7_minecraft'] = df['ch_7_minecraft'] * \
-        weights['w7_minecraft']
-
-    weighted_df['w_ch_8_goldfinch'] = df['ch_8_goldfinch'] * \
-        weights['w8_goldfinch']
-    weighted_df['w_ch_8_defiwl'] = df['ch_8_defiwl']*weights['w8_defiwl']
-    weighted_df['w_ch_8_contributors'] = df['ch_8_contributors'] * \
-        weights['w8_contributors']
-    weighted_df['w_ch_8_coinbase'] = df['ch_8_coinbase']*weights['w8_coinbase']
-
-    weighted_df['wprivPolicy'] = df['privPolicy']*weights['wprivPolicy']
-
-    return pd.DataFrame(weighted_df)
+    df.loc[df['ch_5'] > 0, 'ch_5'] = df['ch_5'] + 1
+    
+    # logic: normal: 1; score of 5 (summed with 7) if 6 matches 7
+    df.loc[df['ch_6_github'] > 0,'ch_6_github'] = 1
+    df.loc[df['ch_6_github'] == df['ch_7_git'],'ch_6_github'] = 3
+    
+     # logic: normal: 1; score of 4 (summed with 7) if 6 matches 7
+    df.loc[df['ch_6_twitter'] > 0,'ch_6_twitter'] = 1
+    df.loc[df['ch_6_twitter'] == df['ch_7_twitter'],'ch_6_twitter'] = 3
+    
+    df.loc[df['ch_6_phone'] > 0,'ch_6_phone'] = 2
+    
+    # 2 below are empty; could be dropped
+    df.loc[df['ch_7_fb'] > 0, 'ch_7_fb'] = 0
+    df.loc[df['ch_7_ig'] > 0, 'ch_7_ig'] = 0
+    
+    df.loc[df['ch_7_git'] > 0, 'ch_7_git'] = 2
+    df.loc[df['ch_7_twitter'] > 0, 'ch_7_twitter'] = 2
+    df.loc[df['ch_7_minecraft'] > 0, 'ch_7_minecraft'] = 1
+    df.loc[df['ch_7_reddit'] > 0, 'ch_7_reddit'] = 3
+    df.loc[df['ch_7_stack'] > 0, 'ch_7_stack'] = 3
+    
+    # update contributor rescoring as per feedback
+    # df.loc[df['ch_8_contributors'] > 0, 'ch_8_contributors'] = 5
+    df.loc[df['ch_8_coinbase'] > 0, 'ch_8_coinbase'] = 5
+    df.loc[df['ch_8_defiwl'] > 0, 'ch_8_defiwl'] = 2
+    df.loc[df['ch_8_goldfinch'] > 0, 'ch_8_goldfinch'] = 5
+    
+    # df.loc[df['invalid'] > 0, 'invalid'] = -1
+    # df.loc[df['privPolicy'] > 0, 'privPolicy'] = -1
+    return df
 
 # count sybil points per address --- load weighted_df; return final_df
 def count_points(df: pd.DataFrame):
@@ -240,13 +242,9 @@ def main_function(df: pd.DataFrame):
     scored_df = get_scores(mapped_df)
     operational_df = format_lvl4_data(scored_df)
     operational_cleaned_df = replace_nans(operational_df)
+    rescored_df = rescore_points(operational_cleaned_df)  
     
-    operational_cleaned_df.to_csv("/Users/jonas/Workspace/Local/Drop/results/challenge-progression-stats-detail.csv")
-    
-    weighted_df = apply_weights(operational_cleaned_df).drop('wprivPolicy', axis=1)      
-    # weighted_df.to_csv("/Users/jonas/Workspace/Local/Drop/results/challenge-progression-stats-detail.csv")
-    
-    return pd.DataFrame(weighted_df)
+    return pd.DataFrame(rescored_df)
 
 # export and final presentation of current points
 if __name__ == '__main__':
@@ -254,6 +252,6 @@ if __name__ == '__main__':
     # print(challenges['passed'].value_counts())
 
     print(overview)
-    print('yay')
-    
-    # overview.to_csv("/Users/jonas/Workspace/Local/Drop/results/challenge-progression-stats-overview.csv")
+    # overview.to_csv("/Users/jonas/Workspace/Local/Drop/results/challenge-progression-stats-detail.csv")
+    overview.to_csv("/Users/jonas/Workspace/Local/Drop/results/challenge-progression-stats-overview.csv")
+    overview.to_clipboard()

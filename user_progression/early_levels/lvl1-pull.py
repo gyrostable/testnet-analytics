@@ -1,0 +1,80 @@
+import pandas as pd
+import pickle as pkl
+import os
+import json
+import constants
+from typing import Iterable, List, Tuple, TypeVar
+from itertools import tee
+from web3 import Web3
+from dotenv import load_dotenv
+
+# establish blockchain connection
+load_dotenv()
+infura_id = os.getenv("INFURA_API_ID")
+web3 = Web3(Web3.WebsocketProvider(
+    "wss://kovan.infura.io/ws/v3/" + infura_id))
+
+# define contract information: mint
+level1 =  Web3.toChecksumAddress('0x29e858A3d3AE4ab92426c8C279f8E8ae64Edfda7')
+level1_abi = json.loads('[{"inputs":[{"internalType":"address","name":"gyroFundAddress","type":"address"},{"internalType":"address","name":"externalTokensRouterAddress","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"minter","type":"address"},{"indexed":true,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Mint","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"redeemer","type":"address"},{"indexed":true,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Redeem","type":"event"},{"inputs":[{"internalType":"address[]","name":"_tokensIn","type":"address[]"},{"internalType":"uint256[]","name":"_amountsIn","type":"uint256[]"}],"name":"estimateMintedGyro","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address[]","name":"_tokensOut","type":"address[]"},{"internalType":"uint256[]","name":"_amountsOut","type":"uint256[]"}],"name":"estimateRedeemedGyro","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"externalTokensRouter","outputs":[{"internalType":"contract BalancerExternalTokenRouter","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"fund","outputs":[{"internalType":"contract GyroFundV1","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getReserveValues","outputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"address[]","name":"","type":"address[]"},{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getSupportedPools","outputs":[{"internalType":"address[]","name":"","type":"address[]"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getSupportedTokens","outputs":[{"internalType":"address[]","name":"","type":"address[]"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"initializeOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"_tokensIn","type":"address[]"},{"internalType":"uint256[]","name":"_amountsIn","type":"uint256[]"},{"internalType":"uint256","name":"_minAmountOut","type":"uint256"}],"name":"mintFromUnderlyingTokens","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address[]","name":"_tokensOut","type":"address[]"},{"internalType":"uint256[]","name":"_amountsOut","type":"uint256[]"},{"internalType":"uint256","name":"_maxRedeemed","type":"uint256"}],"name":"redeemToUnderlyingTokens","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_fundAddress","type":"address"}],"name":"setFundAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_routerAddress","type":"address"}],"name":"setRouterAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"_tokensIn","type":"address[]"},{"internalType":"uint256[]","name":"_amountsIn","type":"uint256[]"},{"internalType":"uint256","name":"_minGyroMinted","type":"uint256"}],"name":"wouldMintChecksPass","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address[]","name":"_tokensOut","type":"address[]"},{"internalType":"uint256[]","name":"_amountsOut","type":"uint256[]"},{"internalType":"uint256","name":"_maxGyroRedeemed","type":"uint256"}],"name":"wouldRedeemChecksPass","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}]')
+
+# # define contract information: gyd to samm
+# level1 =  Web3.toChecksumAddress('0xd0474aEBA181987A81352842d446Fc6c65481417')
+# level1_abi = json.loads('[{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"minter","type":"address"},{"indexed":true,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Mint","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"redeemer","type":"address"},{"indexed":true,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Redeem","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[{"internalType":"address","name":"_bpoolAddress","type":"address"},{"internalType":"uint256","name":"_initialPoolWeight","type":"uint256"}],"name":"addPool","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"tokenAddress","type":"address"},{"internalType":"address","name":"oracleAddress","type":"address"},{"internalType":"bool","name":"isStable","type":"bool"}],"name":"addToken","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256[]","name":"_allUnderlyingPrices","type":"uint256[]"}],"name":"calculateAllPoolPrices","outputs":[{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"errorCode","type":"uint256"}],"name":"errorCodeToString","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"pure","type":"function"},{"inputs":[],"name":"getAllTokenPrices","outputs":[{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getReserveValues","outputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"address[]","name":"","type":"address[]"},{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getUnderlyingTokenAddresses","outputs":[{"internalType":"address[]","name":"","type":"address[]"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"gyroPriceOracle","outputs":[{"internalType":"contract GyroPriceOracle","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"gyroRouter","outputs":[{"internalType":"contract GyroRouter","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_portfolioWeightEpsilon","type":"uint256"},{"internalType":"address","name":"_priceOracleAddress","type":"address"},{"internalType":"address","name":"_routerAddress","type":"address"},{"internalType":"uint256","name":"_memoryParam","type":"uint256"}],"name":"initialize","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"initializeOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"_BPTokensIn","type":"address[]"},{"internalType":"uint256[]","name":"_amountsIn","type":"uint256[]"},{"internalType":"uint256","name":"_minGyroMinted","type":"uint256"}],"name":"mint","outputs":[{"internalType":"uint256","name":"amountToMint","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"_BPTokensIn","type":"address[]"},{"internalType":"uint256[]","name":"_amountsIn","type":"uint256[]"},{"internalType":"uint256","name":"_minGyroMinted","type":"uint256"}],"name":"mintChecksPass","outputs":[{"internalType":"uint256","name":"errorCode","type":"uint256"},{"internalType":"uint256","name":"estimatedMint","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address[]","name":"_BPTokensIn","type":"address[]"},{"internalType":"uint256[]","name":"_amountsIn","type":"uint256[]"}],"name":"mintTest","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"poolAddresses","outputs":[{"internalType":"address[]","name":"","type":"address[]"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"poolProperties","outputs":[{"internalType":"address","name":"poolAddress","type":"address"},{"internalType":"uint256","name":"initialPoolWeight","type":"uint256"},{"internalType":"uint256","name":"initialPoolPrice","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"portfolioWeightEpsilon","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"priceOracle","outputs":[{"internalType":"contract PriceOracle","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address[]","name":"_BPTokensOut","type":"address[]"},{"internalType":"uint256[]","name":"_amountsOut","type":"uint256[]"},{"internalType":"uint256","name":"_maxGyroRedeemed","type":"uint256"}],"name":"redeem","outputs":[{"internalType":"uint256","name":"_gyroRedeemed","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"_BPTokensOut","type":"address[]"},{"internalType":"uint256[]","name":"_amountsOut","type":"uint256[]"},{"internalType":"uint256","name":"_maxGyroRedeemed","type":"uint256"}],"name":"redeemChecksPass","outputs":[{"internalType":"uint256","name":"errorCode","type":"uint256"},{"internalType":"uint256","name":"estimatedAmount","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}]')
+
+contract = web3.eth.contract(address=level1, abi=level1_abi)
+
+#  define time periods
+T = TypeVar('T')
+
+def generate_buckets(start: int, end: int, buckets: int) -> Iterable[int]:
+    diff = (int(end) - int(start)) / buckets
+    for i in range(buckets):
+        yield int(start) + int(diff) * i
+    yield end
+
+
+def pairwise(iterable: Iterable[T]) -> Iterable[Tuple[T, T]]:
+    a, b = tee(iterable)
+    next(b, None)
+    return zip(a, b)
+
+#  request data in time periods
+def get_data(BUCKETS: int):
+    """
+    :START_BLOCK: starting range of blocks
+    :END_BLOCK: ending range of blocks
+    """
+    buckets = generate_buckets(
+        constants.START_BLOCK, constants.END_BLOCK, BUCKETS)
+    ranges = list(pairwise(buckets))
+    windows = []
+    for window in ranges:
+        couple = (int(window[0]), int(window[1]) - 1)
+        windows.append(couple)
+
+    mint_master = []
+    redeem_master = []
+
+    for bucket in windows:
+        print('Getting data for bucket range' + str(bucket) +
+              ' of ' + str(BUCKETS) + ' ranges in total.')
+        
+# ---------------------------------
+#    filter for relevant events
+# ---------------------------------
+
+        pass_filter = contract.events.Mint.createFilter(
+            fromBlock=bucket[0], toBlock=bucket[1])
+        mints = pass_filter.get_all_entries()
+        mint_master.append(mints)
+
+    flat_mints = [
+        item for sublist in mint_master for item in sublist]
+
+    with open('/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/lvl1_supply.pkl', 'wb') as handle:
+        pkl.dump(flat_mints, handle, protocol=pkl.HIGHEST_PROTOCOL)
+
+# start
+if __name__ == "__main__":
+    get_data(10000)
