@@ -194,11 +194,11 @@ def rescore_points(df: pd.DataFrame):
     
     df.loc[df['ch_5'] > 0, 'ch_5'] = df['ch_5'] + 1
     
-    # logic: normal: 1; score of 5 (summed with 7) if 6 matches 7
+    # logic: normal: 1; score of 5 (summed with ch7_git) if 6 matches 7
     df.loc[df['ch_6_github'] > 0,'ch_6_github'] = 1
     df.loc[df['ch_6_github'] == df['ch_7_git'],'ch_6_github'] = 3
     
-     # logic: normal: 1; score of 4 (summed with 7) if 6 matches 7
+     # logic: normal: 1; score of 4 (summed with ch7_twitter) if 6 matches 7
     df.loc[df['ch_6_twitter'] > 0,'ch_6_twitter'] = 1
     df.loc[df['ch_6_twitter'] == df['ch_7_twitter'],'ch_6_twitter'] = 3
     
