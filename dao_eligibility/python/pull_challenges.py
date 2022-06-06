@@ -66,7 +66,7 @@ def get_data(BUCKETS: int):
     flat_challengers = [
         item for sublist in passed_challenges_master for item in sublist]
 
-    with open('/Users/jonas/Workspace/Local/Drop/challengers.pkl', 'wb') as handle:
+    with open('../challengers.pkl', 'wb') as handle:
         pkl.dump(flat_challengers, handle, protocol=pkl.HIGHEST_PROTOCOL)
 
 # start

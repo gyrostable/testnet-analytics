@@ -6,31 +6,31 @@ import pickle as pkl
 
 # level 1 - address minting in pamm
 # 0x29e858A3d3AE4ab92426c8C279f8E8ae64Edfda7
-with open("/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/lvl1_supply.pkl", "rb") as f:
+with open("../lvl1_supply.pkl", "rb") as f:
     raw_level_1_mint = pd.DataFrame(pkl.load(f))
 
 # level 1 - address supplying assets to samm
 # 0x6EAe312f00B4EE0640BF4e3D0A08Cda36F206bcc
-with open('/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/lvl1_samm.pkl', 'rb') as g:
+with open('../lvl1_samm.pkl', 'rb') as g:
     raw_level_1_samm = pd.DataFrame(pkl.load(g))
         
 # level 2 - nft minters
 # 0xe870dbF309100C3f6ab765A5c0B25bec01B6B320
-with open("/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/lvl2.csv") as h:
+with open("../lvl2.csv") as h:
     raw_level_2_nft = pd.DataFrame(csv.reader(h))
     
 # level 2 - level completed check
-with open('/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/lvl2_arb.pkl', 'rb') as i:
+with open('../lvl2_arb.pkl', 'rb') as i:
     raw_level_2_full = pd.DataFrame(pkl.load(i))
 
 # level 25 - registration events
 # 0x028437cF5dB90B367e392Ee971639824684D8295
-with open("/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/lvl25.csv") as j:
+with open("../lvl25.csv") as j:
     raw_level_25 = pd.DataFrame(csv.reader(j))
     
 # level 3 - snapshot voters
 # graphql api
-with open("/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/lvl3.json", "rb") as k:
+with open("../lvl3.json", "rb") as k:
     raw_level_3 = pd.DataFrame(json.load(k))
 
 # match minter list against bot list --- load raw_level_1; return lvl1
@@ -48,7 +48,7 @@ def load_lvl1_mint(df: pd.DataFrame):
     lvl1_mint_mergable.drop_duplicates(keep='first',ignore_index=True,inplace=True)
                                                                 
     # level 1 - bot addresses minting in pamm
-    bots_raw = pd.read_csv('/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/Testnet analytics - bot_vsc.csv')
+    bots_raw = pd.read_csv('../Testnet analytics - bot_vsc.csv')
     # drop blanks, select bots, ensure type consistency
     bots_raw.dropna(axis=0,inplace=True)
     bots = pd.DataFrame(bots_raw[bots_raw.is_bot == True].astype(str))
@@ -79,7 +79,7 @@ def load_lvl1_samm(df:pd.DataFrame):
     lvl1_lp_mergable.drop_duplicates(keep='first',ignore_index=True,inplace=True)
     
     # bot addresses minting in pamm
-    bots_raw = pd.read_csv('/Users/jonas/Workspace/Local/Drop/early_levels_raw_data/Testnet analytics - bot_vsc.csv')
+    bots_raw = pd.read_csv('../Testnet analytics - bot_vsc.csv')
     # drop blanks, select bots, ensure type consistency
     bots_raw.dropna(axis=0,inplace=True)
     bots = pd.DataFrame(bots_raw[bots_raw.is_bot == True].astype(str))

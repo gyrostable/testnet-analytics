@@ -4,14 +4,14 @@ import numpy as np
 
 def merge():
     # change challenge-progression-stats-detail to challenge-progression-stats-overview for summed scores, adapt range
-    with open("/Users/jonas/Workspace/Local/Drop/results/challenge-progression-stats-details-weighted.csv") as a:
+    with open("../challenge-progression-stats-details-weighted.csv") as a:
         late_levels = pd.read_csv(a,usecols=list(range(1,23)))
         # late_levels = pd.read_csv(a,usecols=list(range(1,21)))
         
     # -- slight formatting --
     late_levels['address'] = late_levels['address'].str.lower()
 
-    with open("/Users/jonas/Workspace/Local/Drop/results/early_levels_stats_exp.csv") as b:
+    with open("../early_levels_stats_exp.csv") as b:
         early_levels = pd.DataFrame(csv.reader(b))
         # -- add headers & drop first row/ column -- 
         early_levels.columns = early_levels.iloc[0]
@@ -69,7 +69,7 @@ if __name__ == '__main__':
     # temp = overview.groupby(by=column_list,axis=0,as_index=False).count().to_dict()
 
     # -- easy exports -- 
-    # overview.to_csv('/Users/jonas/Workspace/Local/Drop/results/endstate-overview.csv')
+    # overview.to_csv('../endstate-overview.csv')
     
     # -- challenge completion counts per challenge -- 
     # aggregated

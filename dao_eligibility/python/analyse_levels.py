@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # load user data 
-with open("/Users/jonas/Workspace/Local/Drop/challengers.pkl", "rb") as f:
+with open("../challengers.pkl", "rb") as f:
     object = pkl.load(f)
 raw_df = pd.DataFrame(object)
 
@@ -200,4 +200,4 @@ def main_function(df: pd.DataFrame):
 if __name__ == '__main__':
     overview = main_function(raw_df)
             
-    overview.to_csv("/Users/jonas/Workspace/Local/Drop/results/challenge-progression-stats-details-weighted.csv")
+    overview.to_csv("../challenge-progression-stats-details-weighted.csv")
