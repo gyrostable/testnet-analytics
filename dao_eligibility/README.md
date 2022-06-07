@@ -1,7 +1,7 @@
 ## Overview
 Testnet analytics were performed with JavaScript, the results were subsequently verified against the output of an independent Python script. 
 
-Having matching output from two different analyses in two different languages adds significant guarantees that the outcome is in fact correct. To reproduce the testnet results either analysis can be used as a starting point. Please note that all relevant items of the JavaScript code are shared, whereas in Python only the relevant scripts are included, no charts, ABIs or other supplementary information is explicity documented here.
+Matching the output of two different analyses in two different languages adds significant guarantees that the final outcome is in fact correct. To reproduce the testnet results either analysis can be used as a starting point. Please note that all relevant items of the JavaScript code are shared, whereas in Python only the relevant scripts are included, no charts, ABIs or other supplementary information is explicity documented here.
 
 ### General structure
 Generally speaking the testnet analysis was done in four steps:
