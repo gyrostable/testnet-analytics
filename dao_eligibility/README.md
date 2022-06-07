@@ -5,12 +5,11 @@ Matching the output of two different analyses in two different languages adds si
 
 ### General structure
 Generally speaking the testnet analysis was done in four steps:
-(1) Pull testnet data about Level 1, 2, 2.5, and 3
-(2) Pull testnet data about Sybil challenges
-(3) Clean and analyse data with specified conditions
-(4) Verify output against independent script
+- (1) Pull testnet data about Level 1, 2, 2.5, and 3
+- (2) Pull testnet data about Sybil challenges
+- (3) Clean and analyse data with specified conditions
+- (4) Verify output against independent script
 
 ### Complementary information
-For further information about the weights refer to: [link](https://docs.google.com/spreadsheets/d/1ASrQ5f9K_Sc12cX20cRNflFjUgEGfAUebM5IK7YCW48/edit?usp=sharing)
-
-For further information about the eligibility conditions refer to: [link](FORUM POST) <-- to be updated
+- For further information about the weights refer to: [link](https://docs.google.com/spreadsheets/d/1ASrQ5f9K_Sc12cX20cRNflFjUgEGfAUebM5IK7YCW48/edit?usp=sharing)
+- For further information about the eligibility conditions refer to: [link](FORUM POST) <-- to be updated
