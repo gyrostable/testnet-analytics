@@ -15,3 +15,4 @@ Generally speaking the testnet analysis was done in four steps:
 ### Complementary information
 
 - For further information about the weights refer to: [link](https://docs.google.com/spreadsheets/d/1ASrQ5f9K_Sc12cX20cRNflFjUgEGfAUebM5IK7YCW48/edit?usp=sharing)
+- For further information about the eligibility conditions refer to: [link](https://gov.gyro.finance/t/final-proposal-on-ggwp-2-migrating-founding-members-of-the-gyroscope-dao-from-the-testnet-game-to-the-ethereum-mainnet/12429)
