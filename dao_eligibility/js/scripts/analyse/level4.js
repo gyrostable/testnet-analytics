@@ -250,35 +250,39 @@ const keyToScoreNameMap = {
 const keys = Object.keys(keyToScoreNameMap);
 const participants = findParticipants(sybilChallengesData);
 
-// const sybilScores = participants.map((address, index) => {
-//   const scoreData = {};
+const sybilScores = participants.map((address, index) => {
+  const scoreData = {};
 
-//   console.log(index, "out of", participants.length);
+  console.log(index, "out of", participants.length);
 
-//   for (let key of keys) {
-//     const dataSlice = sybilChallengesData[key];
+  for (let key of keys) {
+    const dataSlice = sybilChallengesData[key];
 
-//     const relevantData = dataSlice.find(
-//       (datum) =>
-//         ethers.utils.getAddress(datum.address) ===
-//         ethers.utils.getAddress(address)
-//     );
+    const relevantData = dataSlice.find(
+      (datum) =>
+        ethers.utils.getAddress(datum.address) ===
+        ethers.utils.getAddress(address)
+    );
 
-//     if (!relevantData) {
-//       scoreData[keyToScoreNameMap[key]] = "0";
-//     } else {
-//       scoreData[keyToScoreNameMap[key]] = String(relevantData.score);
-//     }
-//   }
+    if (!relevantData) {
+      scoreData[keyToScoreNameMap[key]] = "0";
+    } else {
+      scoreData[keyToScoreNameMap[key]] = String(relevantData.score);
+    }
+  }
 
-//   return {
-//     address,
-//     "Weighted Sybil Score": weightScoreData(scoreData),
-//     "Unweighted component scores": scoreData,
-//   };
-// });
+  return {
+    address,
+    "Weighted Sybil Score": weightScoreData(scoreData),
+    "Weight component scores": weightComponents(scoreData),
+    "Unweighted component scores": scoreData,
+  };
+});
 
-// fs.writeFileSync("analysis/sybilScores.json", JSON.stringify(sybilScores));
+fs.writeFileSync(
+  "dao_eligibility/js/analysis/weightedSybilScores.json",
+  JSON.stringify(sybilScores)
+);
 
 function weightScoreData(scoreData) {
   let weightedScore = 0;
@@ -312,6 +316,54 @@ function weightScoreData(scoreData) {
   weightedScore += Number(scoreData["4.7.3 More OAuths Twitter"]) === 2 ? 1 : 0;
 
   return weightedScore;
+}
+
+function weightComponents(scoreData) {
+  const data = {};
+  data["4.1 In person POAP"] = Number(scoreData["4.1 In person POAP"]) * 4;
+  data["4.2 Sybil.org list"] = Number(scoreData["4.2 Sybil.org list"]) * 3;
+  data["4.3 Governance Voters"] =
+    Number(scoreData["4.3 Governance Voters"]) * 2;
+  data["4.4.1 Community Calls"] =
+    Number(scoreData["4.4.1 Community Calls"]) * 2;
+  data["4.4.2 Strong Anti Sybil"] =
+    Number(scoreData["4.4.2 Strong Anti Sybil"]) * 3;
+  data["4.4.3 Weak Anti Sybil"] =
+    Number(scoreData["4.4.3 Weak Anti Sybil"]) * 1;
+  data["4.5 Discord Challenge"] =
+    Number(scoreData["4.5 Discord Challenge"]) === 3
+      ? 5
+      : Number(scoreData["4.5 Discord Challenge"]) > 0
+      ? Number(scoreData["4.5 Discord Challenge"]) + 1
+      : 0;
+  data["4.6.1 User Account Github"] =
+    Number(scoreData["4.6.1 User Account Github"]) * 1;
+  data["4.6.2 User Account Twitter"] =
+    Number(scoreData["4.6.2 User Account Twitter"]) * 1;
+  data["4.6.3 User Account Phone"] =
+    Number(scoreData["4.6.3 User Account Phone"]) * 2;
+  data["4.7.1 More OAuths Stack Overflow"] =
+    Number(scoreData["4.7.1 More OAuths Stack Overflow"]) * 3;
+  data["4.7.2 More OAuths Github"] =
+    Number(scoreData["4.7.2 More OAuths Github"]) > 0 ? 3 : 0;
+  data["4.7.3 More OAuths Twitter"] =
+    Number(scoreData["4.7.3 More OAuths Twitter"]) > 0 ? 2 : 0;
+  data["4.7.4 More OAuths Reddit"] =
+    Number(scoreData["4.7.4 More OAuths Reddit"]) * 2;
+  data["4.7.5 More OAuths Minecraft"] =
+    Number(scoreData["4.7.5 More OAuths Minecraft"]) * 1;
+  data["4.8.1 Goldfinch KYC"] = Number(scoreData["4.8.1 Goldfinch KYC"]) * 5;
+  data["4.8.2 Defi Whitelist"] = Number(scoreData["4.8.2 Defi Whitelist"]) * 2;
+  data["4.8.3 Coinbase"] = Number(scoreData["4.8.3 Coinbase"]) * 5;
+  data["4.8.4: Discord"] = Number(scoreData["4.8.4: Discord"]) * 1;
+
+  // Bonus points
+  data["4.7.2 More OAuths Github"] +=
+    Number(scoreData["4.7.2 More OAuths Github"]) === 2 ? 1 : 0;
+  data["4.7.3 More OAuths Twitter"] +=
+    Number(scoreData["4.7.3 More OAuths Twitter"]) === 2 ? 1 : 0;
+
+  return data;
 }
 
 function findParticipants(data) {

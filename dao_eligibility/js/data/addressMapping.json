@@ -1,0 +1,1507 @@
+[
+  {
+    "old": "0xa34d2716e86cb721d9ecb84b44853e5a86900892",
+    "new": "0x24100377bfbbe84225137d489a811c89e9b1408d",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x99832c553045331fdd8fb1ab6164d601d6bd8db9",
+    "new": "0xc0f6f165dfac9a3a53acc5b46d50546d2aa1eb45",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xe9d914ddc3098ab8e246ae61db96590090204f06",
+    "new": "0x92c8d6feeb37c64a28349298f9a47094bc0f5d9a",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xc70bea29d8feb18089848884232b83c5641627dd",
+    "new": "0x051d7009176a33e3eaf6a0453e9a38c967aeb54f",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x44fd4887417875d8828288ce03f562c0608d38d2",
+    "new": "0x3e1dae41e590ef4d698eac58bee7c5271fdb3c03",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xf4fba5501619f98d8fd4cf09f60f87080baf2dff",
+    "new": "0x885d818a8ecb26e87a7ca14d5e89ffe76f888888",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x40e48fab6823e7837d9d6809758a4a714a8b8470",
+    "new": "0x30e37abc1d4c99f2a249f64e47553e63a5c3cea2",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xadf4900fb635edc9188fadb42a45084c453abb73",
+    "new": "0x62b4b94087c7ce27ec184724ded458c6b84151de",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xd3e3b95ed0edc914bf0a0d78ac758d735392a3a4",
+    "new": "0x72ba95d9701b0ae496ab4320010a43a764905b1b",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x4283fd39c70c1ceeafe410478f3568fd9d3f1aba",
+    "new": "0x99cf24f1934fc5f10efb0800f98996953ca8d11e",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x141711dd6fe5439d6445f402d00ae5f38e13b543",
+    "new": "0xc463ccf59bef5ee92dd25887b196725b6e5383bb",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xd47a046838fbb83a002ee502569c6c2af3105269",
+    "new": "0x85ece1f3a5884afcb2428f70f628d38adb31f655",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x1ebd5e34c7fbcd4609f2d55ed0cb195762797f70",
+    "new": "0x203b80263d0d00d80a31457cfb06a4a5e8bf065e",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xe3189b79fbb33517ef4f942c433b930aca5bc984",
+    "new": "0x64399ad143795ddbbc6e0c0a5ed1116b08fa1873",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xdcc521b339ce489399e2bf896745f4d66bd9014a",
+    "new": "0xaa2a874c1fe5530fa87e98860b6b578bdb9d441d",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xec8b674534384315f0c0e824fc7a8afd9dca6182",
+    "new": "0x3fd3da052e9e5d288e44fc992484d8da8e2104c2",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x611bca8adca69b03adbfe733ef18b9bb88a5a518",
+    "new": "0x11eca31264d6f2356e24089c97cdbf0147a2a447",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xa4e6eadb8573492282e6ded5efd53a12981d4182",
+    "new": "0xc2e2a3383d22ee4a704619da30b1e4f8b420abad",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xa348a19970cf59a7d762010fa84c938ecb4f37ae",
+    "new": "0x8caab82f095d9db31587911067eaa15f79ef8bcd",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xfee7ef4e435daea37ab12595f3e03ce5dd5c70b5",
+    "new": "0xf4a327d653f3318293789e2175ed4456ba84b134",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xe9fc591f44cba633ae8ed9bdcf8978b291bbe235",
+    "new": "0xc93506562cb071623cb4a8fbf305f1c087b105c0",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x6c7702aee2aba69dcc739a33adfe58880d6a9318",
+    "new": "0xae66039ee437cc15121e7dd93af9fe41909d140b",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xe74db0616100018ae9e90bdced675f32ee6196d3",
+    "new": "0xd92cac8f3b818541ddf55412d10c98611f5eb684",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xed7f655b5d216a7e433e7939d12f6fc5e98267f1",
+    "new": "0x78f8f8dda1f4f1e25c30ee1207d312da6309910e",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x99c820e11d5ee26a55755f24f7b6cb55ea782136",
+    "new": "0xe2ee24735612a25b04101e4dac57c2e193fe3cb8",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xdc5b23a5001f5659abda1faa307afa7369b3cfb3",
+    "new": "0xccbb4dd61efcac0b3e2e521d6cb45fc41c03f980",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xd565115f668afb22226b4771706b81b3d22b2bd5",
+    "new": "0xde79f58295465beb9f8ea03efc481f55c838ff30",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x8d547b942ac22a909e45d72789a2af3ade281057",
+    "new": "0x1254be0beb25b7a47ae52cc35a70693b837b9e78",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x8dfabf1e7ca6d2463cdde0e39ab2972c6f7d06c5",
+    "new": "0x44e651be6226b5b3e601f9564869389eeec1077e",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x273d4c6f62b79ac79f42575a6fe8ef58764e072b",
+    "new": "0xdbff110e3a51d2c98bc97bb1d114e8be2778bb3d",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xded597504d5beacce9b56899b961e6374b5f90a4",
+    "new": "0x24aeb8cbbe6586d567c8687528914fb525045c27",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x922ef7c0a1664e163204696af3b1446070f214f3",
+    "new": "0x0ce0dc2614e7196bb4155ef778bfcde98824d04d",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x208be48b21338a25c0a7b10088637f4faf27b54c",
+    "new": "0xc5f1e01c5fcf3dbec946bb47e036803e98de6098",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x1be7986e2703fb1c3ec7ba26d65d36ad218dd733",
+    "new": "0xb445a273f32c6959080b35bbbe01dd2344110f23",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x9c4c57170cf877eb7dd0e30bbd98592e4194a14c",
+    "new": "0x28293024edf979f92ec22f67d20ff500e46123d6",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xd04aabfab4cadc259e3043f7bbfd3a29f309694e",
+    "new": "0xdcfea5564cb96a67bf843b7710105eba5a8f717c",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0x4129ab5bdd02ff4637ddeb4ce5c4218dec4d8db0",
+    "new": "0x38e3ca88b69ba2ab447442b7ae5a6b50eda118de",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xabe031d9b1b6f963e0f656c3024451e5c4e80069",
+    "new": "0x1e61366875466a32ab2ad364e75e92d3e25c769a",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xa367ba4550a7fa83b16186c29abbc0bb6cc1f4b7",
+    "new": "0x9e9886a5b00b1b74611ef0c766921dea87082eb5",
+    "remapping rationale": "compromised wallet"
+  },
+  {
+    "old": "0xf3d2ca9df118a3f53222b3117fe3710862616efd",
+    "new": "0xe4f100b9d50a2fcd41bd475b8a33198779fe5dd7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x00f0c20fcc20452fe76c24eea02441b0881b1a55",
+    "new": "0x8d08edec88951de4cf77f2efd4b3eab1edc7e1f3",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x98e4fb4a08a101e59d51883209500589705d3dff",
+    "new": "0x39b370dca90663ffdd30838cd97c93a5042cceaa",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x8b986d5a53b6f3368db853c1b39e50c17435b000",
+    "new": "0xe936d7fdd2600e75d51226497e1bb75132c60de3",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x1edfe3e6f4831b12d5748787f845501bd5d7ee92",
+    "new": "0x7f2fea87f3c19c1de58ed6a7e58139532adc93b0",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x63242da66f959860edf70cdb099b2d1b633a8aff",
+    "new": "0xc23c0a2b322b619b209dc052b99855fb463d8176",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xf2db98bf2f41ff4959b20ee3dde3a4208130db10",
+    "new": "0xb6788063ab2c67b5cb0571e7b81492e995fb4995",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x719226f971bdd5cc1f5664c2181c51710b38f8ba",
+    "new": "0x59966e8e109b62acd549e6ce5f485e08a4a6b7a7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x1ebac4b911fbfcf38cfa0d95f9d9281268bec8bc",
+    "new": "0x11c436974c25e95bb8c5ec8f75160370d82e484e",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb81cc1b3668e0a4ebfcc91142db1019cc0ec3a03",
+    "new": "0x7e0f6460bf61bfec13aaee85bbaa458e4a594019",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x13cc9c8c34205ec40def6badf2e51a10051a537c",
+    "new": "0xd4a510ad4af2a8c974690a7aecfbc1a607a7ff4a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x45777cc16318e3dd0ae8a49ace320ad073d483f4",
+    "new": "0xf2c2d3813f204d574ac8574025f3d2de3c2bb2f5",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc0ffa7cbdda0cb455dcbdeb86c2df2b3441c87c3",
+    "new": "0xf45db938bdc83a3060e1bd629767eb0e96e3884b",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xe31538493b100c50546459bbe8f9ff464440b08a",
+    "new": "0xfefba63bcbaaa60056bd095e75c25918f7d7e4cd",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xdeff5daa41bc946fc9efb7b7a66a26ff40d9f5c8",
+    "new": "0x0eeca95c58919b1b96bb1cde61a99f9d7571def6",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5f6b59dbc1bae0a33cdea10374dc7032d95b1cba",
+    "new": "0xc7249beb7de6f16e000841757487da4dabc0ea1c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xf63e59af88c867c21f2264c363b25b6dd44d89c6",
+    "new": "0xe703f8dbf235d96f3186164f52c1f66b813c764a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9e0ee8cad01a4dfc4167d077b0e5227e0090141b",
+    "new": "0xf5b4635f3858a2bc80a17bd4450e05a35ad99a72",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb09d52990f09731c9479223ec16fd67e8341e86b",
+    "new": "0x57f8473949ae952541535f874d18d1f4776e7f56",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xbbb6573348c5e6d42b697fdd9c83d6122a37587c",
+    "new": "0x0bafc61b3a69b39b52643c2ce4d16d15b3b49628",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xd4844e3f57b241e6a03ae06ed7e86a4fd8be65ad",
+    "new": "0xbb8d9884e0421549e15a042c978f75f048e4e832",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xee70989855ee0fbd9086d0b035c2dfa0dce655d3",
+    "new": "0xc7f98324ac882dc60d6bf151dee1a83a3beb1ea6",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6d3225319bfd1c189615088dc7895ab8a04ff638",
+    "new": "0x79598678b948e370e4bc405a5bb1755c67a11348",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x8ac4e469922e86355e850f1d3e26e6e03b450e46",
+    "new": "0x893845cf94cd86192a827e118edab1da50029776",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5553509dfd491d31ce8ec84230f49a24ce3138a1",
+    "new": "0xba827020d6bef5e39389f73dd79be6a87cdbe18f",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9477274bb82c0c2eabd1b5b91070825816456c65",
+    "new": "0x899f2e498f02bc50f90f547a71fd1539ecd651af",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x23e0b8340da3e63137f64de663a7c317f3721c89",
+    "new": "0x37932b66a97a573f8b4549ba6a509a652c554937",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9b23ab8e4811417def06f1f1defc35c3c05f5b2e",
+    "new": "0x777befd4a6f70cc0a6e808784278777dbfc6a552",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xa23beeb82c8b867767f81af550f336c316355d25",
+    "new": "0xb34467206a24e756b63f5e2c8a8a38fa64ae0c8e",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x0da37a7948f1cca638d0c8b7170b6ad5c97a80f8",
+    "new": "0x105fd16339015ec6e849857e55da37cd72e87716",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x16a281b6186874184bda0b30cb74a9a7badbed8a",
+    "new": "0x8cf63110418fbe7b7a183c5b5083f8a9c72ba317",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x0772380c71eee18d2c07014a35b2be943090ebf1",
+    "new": "0x51aeb544c49ea8cc11e7421ac870019d628f8ba2",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x801ef9dc4fa814170e7a1abf98884fb6eb97fd64",
+    "new": "0xc9c67603d3107ad53d1816d3096b5b36b52cdedc",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xf6323ca517b5aef82a67a63652166a2b38162104",
+    "new": "0x4c710b38199f589dd769d36ed52b6d0170cb83ee",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x027a23154d6a2c6f6e7d3f53603a1d9fb04fd329",
+    "new": "0x8bbe8fe4dda236f8d6d537cfa26ad8cfc905bec7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3cad61bc09c4d128c46d5112aac28bf35f0271c9",
+    "new": "0xa1009269364759ea8fa553150a46527348b36fc3",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xe11c6edfabf168d9f87bf335dbadceaa892de29d",
+    "new": "0xcf66c0e3ac810d8d4c94165e262f02c88494b642",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9cc0708aa1a1d0da90626c0e034346a779f14905",
+    "new": "0xee7f3f14a5dad38d192a09f76756c7d3c261afa8",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x462bfa4404fdf7dc857e605f0dc57fe75489ec59",
+    "new": "0x048ef7cca71486e8217e72aafc53eba75d0c3b17",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x909e092c8ef7d16309398374045572dcd9f2c22f",
+    "new": "0x72761e75387421ea4668b3b5da8f1050e930730b",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x606c4cdaf633e70391c7cb7721f2e37adddcc78f",
+    "new": "0x32ec9684bf53c14e5b4e424543ed41f93767d808",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6ffedc87406a2aab26b78655d262515c7120fb13",
+    "new": "0x6764634c4916caac14f34419e8b9f0c1cf912d24",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xfbb65f27ec786c1c387f1052b67e63f0f7f0142a",
+    "new": "0xc4b0ffe08b960a512b07f1afdafef84e428ecdce",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3674ec0000efa8a10e4f2bf8630ef513a2e8f4c2",
+    "new": "0x3823d85a1f6412a14a3862cc2629f17de3d3d1e9",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x030a65cba02dc25709e841512264bdc5bbc5b192",
+    "new": "0x2b2d337a62c7f8c0d8f013dca03738baddaa0a9d",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb67b873218255104386dac81c692be22bb8e231c",
+    "new": "0x313a29bec684e916cd8614be2703542814880c82",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x69c61b086da7b02fa6a616816d68af43f4867c98",
+    "new": "0x9b9138241590e5058f374a70f74512b96ded56a0",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xf0a3ac1400d7880fedc7b1261be20936b87f44bd",
+    "new": "0x678f1b5db8474b0e189f45948483b651cabdd4eb",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xa9ee26748eae2f64be1c91e06082fb8d28f96e8d",
+    "new": "0xb058c9d0500f2dbf41d6697ca351cddb85f53067",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xdb4b1757c484b2ae662ecfc4688bc3e6e0b23ffd",
+    "new": "0x07ea083df1c752c23e46efb823a15edd8fa4696a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6915c8152202220dc65affbc812189d22f490724",
+    "new": "0xc6123352c93617c137eb2ed57b97eb696b41223e",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x7cafe6fdad4718ff69ad496f2fd4f27ed537f2a1",
+    "new": "0xa0c242d40f0eb145bcd37764905bd9284c21fd65",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb5f06eb4334095d8f88c9eba8619df683a646af4",
+    "new": "0xca660e3e501885359382b5f2ed3b2a9e6ca0a29f",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x690209120387be0fb7ae644592657c9bbeb15bb3",
+    "new": "0x2ab42d5887a0f951ba2b2a07a9959902fe1d76b7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc9919093a4908d538696599c5ecbf0b1e259a612",
+    "new": "0x9b9138241590e5058f374a70f74512b96ded56a0",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x4afded08a6e95c343f232bbf4fa4629103c969e5",
+    "new": "0xa5d681324f58a3db74b9c1cf8e94364d807c3d20",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x956e169fc57108bc0934417083930f29aa170acd",
+    "new": "0x2950543a1ce31081f3c5270ea7f58295d5ba95b3",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x71b1c030579d95494f6475d3e85e3fdf2abccb11",
+    "new": "0x6c92cd3d2516dcb3a576e49a964e0b0f283ff22e",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x34567d53dd448fea28887fb5f76f80f544570d82",
+    "new": "0x040d4205b3b23151c5df8076c15ce830332b97fd",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x2751cbc9a46e083b5b4cf892e4d76586d01d06d2",
+    "new": "0x2e0dedfc1954707bfc01ba219ecaebe0bf53c5e2",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x30dfd01274f4ff4bbd8a51dec0b6e440f6f940d4",
+    "new": "0xefa97b92bcfe971d6bb1bf9fed0e2536ef94846c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x71da1a32d1837dde8dd3fd63ab4eccb16ff2b587",
+    "new": "0xdbaa7e3b56deb42902a405943af4f3b030f37fe7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x832365c750bb18c5801f43587c77524018773d17",
+    "new": "0x481cbb3c857cf09fc98c01af08894a6b2a49208d",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x28400204bee6c4641ad0cad07c1cae596d7d1d70",
+    "new": "0xc2293de8fa7eff22d071bbf02d37d9cf98cb79d2",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xf0107130d685e93b34543b98612bea868909e27e",
+    "new": "0x31ad4033ed83c4f50556213be7e285ce9f99d582",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x751ff30ed064ba16fce4f87b3557dea6f4decba0",
+    "new": "0x7e7e1daff56ad1b0753d2dc4e4c33d29cc9ccc51",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x349a98b79b0e99ca00e9cae0bfd7bb640616a730",
+    "new": "0x642d38840ebfda55911f83b1cf8b5fcb1d5fce36",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x4bee4d5807dc557950ff9995df3bb0aaa180cc23",
+    "new": "0xbbeefc5264ea7537c3fee49ba6d2c82a0a4d3e28",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc958fa7500529616828d4f49543c6a7f11e299b5",
+    "new": "0x0a9dafaed64f012ce737c5b807c653293397b117",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb6561252e1509424b6e1f6019d1171b137e01133",
+    "new": "0xf3a0a0bda970053b9dab1bb5cf98cefc5902f2db",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x31ab9f202ce5a8dfc9f02ceedf62f8363c35afb3",
+    "new": "0xcca60b100b891432d135e4571582d15cb3439e2c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb6cd484482e6153aa8cbb9eec02bfe625e655f22",
+    "new": "0x600cf1e25abb85fd3e32b129be6bde351a7161f2",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x28824b9cc3b36d9250751324b067f4f626e6f275",
+    "new": "0x0aff5e01193d502cf88797f5dcabc1d881be62ed",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x68bc73e474dac78121f521ed1457f44f3f3a93cf",
+    "new": "0x65b5523bbcbdfd478c1fd67b394233c282f88951",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x2a3b972d9dca2a95823de22010beda2e31b0371c",
+    "new": "0x46d1e667581bf1ecfd67dd82b9c44e60e05880bf",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3950df224e5536b66d2b6db2bd8d2ebbe9ca091a",
+    "new": "0xca033dde99df3047b43ba2fd080d3454d8786f7f",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x596ca26659da0f5c1297090324a687ec709c8c47",
+    "new": "0x3a8b9b6d9286a42d3956a54dc60ec81c6865ce82",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9dee3cdfb03069447a80e059df27294f8725a1f2",
+    "new": "0x7dc445e2b251e82bd45a4401e72cf60b6b4a13ab",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x1c4e988ce956f61b52b967e91126f20271800f9e",
+    "new": "0x47d371bc1ff6167ce2f7ff712b0799243658e1a2",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xfb0e88d7f5ba9ac38a695999ba48fc62950a931b",
+    "new": "0x87c0c027e9843d316e3e4e06941a191873e51e9c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb3cffb07413f3ff6bddcb1f50cc7a7102f51e977",
+    "new": "0x33aa0f00b75bf69543f1351412fff1e3a12d114a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xd282c464ce7ee636df74d9677d9a4e7129e7bf04",
+    "new": "0xafaba30769374ea0f971300de79c62bf94b464d5",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xd4a9c0c86cff303ff90935144e3868d4f7e7f60b",
+    "new": "0xb5e79a1fa0d54eb7ae15882b4fdd787e7ad8d266",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x477ea3f48c3d296eb6ecd42c2f69cdf28eb622bf",
+    "new": "0x50e154ad82b3d9bfcfba58e4a6f45438e1f69cda",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xf5ac7e1011b65a3b28e9b55f817019628054b316",
+    "new": "0x3185ef019ba1c04b8d65edb64c1c34c3eae52271",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x104f993a0e207f609f39b0e96109e7f69a799b92",
+    "new": "0xbd1beb4a57da3787817b9e062ecbd282bd054fcc",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x7b897c4d3afd297520c5ccedaf24913a738edbcc",
+    "new": "0x41afdd350c38aed66dc0b99b80633ba8f1fdc669",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x8261cd2a51ff55b86046b5eeebb54118559a7853",
+    "new": "0x6d6a8a72c600b9a305b53088976eceef69e1211f",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3a01aeaf23caa39d85e8e06b1938f4f1af282fa7",
+    "new": "0x3a95ead303a1b545e3d7a38fb7cb3a7944b8bebd",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xd2f45d919bca82edc03bd4edcca9abe6ab684ed3",
+    "new": "0xe3452b9bd6d9af88164dc3f0994e3c48d04962ee",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x46510b747f50d19bd7fe66f3d24710280a5ec654",
+    "new": "0x324f3d3d3b5c6328e2d2c4b6e39a7cbd422521be",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x02703abfdc84e7614bdc52f9e65952a8c0ac4a2a",
+    "new": "0x56fcc09137aac91b3bd8d926fb8ffdcdef8fb539",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x0d2a9b71a9e8fb0828701d972fd8cec4cca5560d",
+    "new": "0xf9f367bdd8fa6a045dce59c59bc9dbe8c65d458c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc05ba48cdaa4c9285d96bff09243f410ca584a9d",
+    "new": "0x5ecc25d1f658af69d9b59fcaedb2d9ee38254036",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xdd35c802468c9dc7c0c8d737abd4db2dd2c7836a",
+    "new": "0x8cb35ae2a1939fe09603152c6647604116929725",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6213225e38b2605e1ff84348e10256e0c10653a5",
+    "new": "0x4eac2e8b048af30030e47af229b52e0c3aa23673",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5c0354e628a545687fc4fdb0f138f35d155eb4f2",
+    "new": "0xca033dde99df3047b43ba2fd080d3454d8786f7f",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xe2bbe5f1538a7c1a8df82a5ae9becf978023a30e",
+    "new": "0xa9903bda477b9a57bd795adff9922cb98db65f04",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xbc407c18aed77e94c0342e3e7ac2aaad79ca6118",
+    "new": "0x93ce9ab599a2682604e3ebf7e837e3815d5ea9b0",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3cf1fd304251787d8ad6b484410f29624a31bfc1",
+    "new": "0xb9adca938266e35a0f931638063894fafb401730",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9e52c50420ab1f9926da74a8305cc0facde4f29a",
+    "new": "0x2169ec73eeb5287ed3180b401b6383beaf5a2011",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3882baa5bce4fb22a5d5d309a8cf62c8fb4c6110",
+    "new": "0xe83b8cb4955ea849e69a03325543e6e1d556fa6f",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9c5f7f76473aa2eaa9c5cb84ebe3d23e9a3ded97",
+    "new": "0xa19aa7ddc767ffd58e6a9b54b150d400f13f13b7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x313a3399889ed22c51d570abb0d37a04ffbdc664",
+    "new": "0x22a7155442d22547379079dae7d4629bf0fc8260",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5e3667eb653a8583bac8ceb5aee41dc680b2c315",
+    "new": "0x42225b0c8c3f0c7c4d5b21a008a899e9a4992788",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x812acc3b92002aca38b4d35eb95f7d0566d5003f",
+    "new": "0x98bf6e7ff9cd4e7ea8778a54a8e9ed79612db09d",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xed9225838d29118f2b06f5047bca3c4f98a45d10",
+    "new": "0xad3caf6472aaebff314462ab6b15a0056d027773",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xfe042b1aeb471cff2e1a6709e5682533d19cbcc7",
+    "new": "0xe4bb384be9a52e7c980887449bae068a27aed98f",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6298c324ec1aa0bc31fc7fdaf5a0b0c4fe009ae0",
+    "new": "0x578b9955c40af360b7e43f837c051f60543a222d",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xf153e14f7f346f79345109d2631b03702b907c05",
+    "new": "0xd3326ae6821b19be3457f6d9b695f15c9065575e",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3833f73bf55c1962ad8f850ba9d5be1a202bf70a",
+    "new": "0x6ddec38bfbd915121c9a233581249995b98655fc",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x8761a6b3b4e748788b41d4617f7ee963b566ce21",
+    "new": "0xf0888eeb5abbe99ecaa2ac35305ec5fc0fe656d8",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9397be8c4870fb4622d74dd0ad241c053a2c33e7",
+    "new": "0x7d92977e5c7411aa658aab09e6b34930fe8bed9c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5161de8e425fdb28b24429bf389459a0916db245",
+    "new": "0x65d3375f1e626f3bd2f35183da5a11222ecf4370",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xef30ac13c4dece6aaaf2db2983bf2dadf1617af6",
+    "new": "0x94520e2f86afd790263715f727d0d35f533f2a36",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x115206d03f7d8c49f01ef9a485a66124ceefbdd4",
+    "new": "0xf0ad8d543a644ce21deeef08e797c22b36677826",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xe327ad1aa718ae837be5b9bddebdcb321c7609fd",
+    "new": "0xea9bde7a71c015ec8ebb604c66f3f2d8e626348f",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x41371318edcb6226eaace31369de444339dd5707",
+    "new": "0x87803829543c026a30297c47925278c69d8d44a7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xa7ec38b78a1cea645fb4e53d5bf9358dd0805748",
+    "new": "0x26acd41f3730bb271e436c851665c9326447d232",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x707d47aeb7625b2950138dbf9ad4a870fa2f8a38",
+    "new": "0xe02f11277cfa84c696370c097c51848c6a6523b3",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3b6bdafa812f8730a4b6c85c0fd671ce478800d9",
+    "new": "0xa6d62ece2f050a9b1ef79e003eda0a012504b3e8",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x8fa693bc535a35563d38ab83f8a82fa9732eb26a",
+    "new": "0xe74db0616100018ae9e90bdced675f32ee6196d3",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc887aec38234e63e9ba4f2d6cc75774728d08d20",
+    "new": "0xcd0f52ef1b9fad55d03b4c01c96bb9348791da42",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x088873f2bf4490e7676536c261d96f47c78df56b",
+    "new": "0x7088c5611dae159a640d940cde0a3221a4af8896",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x66ddeafa2f11dd8628d6491637cb0876fc185606",
+    "new": "0xcda25edcee831746c3198525242ff8978c936715",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x7528b3515e21b2d5e19daa49f86ce375e7126124",
+    "new": "0x08e62f3854ad0f458e2651499e4d11573e6b8e54",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xa8ebe6dcda66bb74a8db994554d2ad277cb54ada",
+    "new": "0x22f6edb55790b0fe841c5ba9aa30792ebcb55863",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x890f690dd08cf2af88cc4f4e426e6e61938e4ca3",
+    "new": "0xef291527c74d6c10b6b533d0ee45ab9c92669c5c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5e4e30dd4bd50fe8f9015be865f08af08756f2f9",
+    "new": "0x7afc7f83b1ea7b96c480c3a70d7313ad5c89bca7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xfdda3e50338e704be626af885422b1d57c032dc0",
+    "new": "0x8a658b14a6b2ace2d83a9b6eddfc6f7cf15b6f82",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x947e347e899f74a2c3501297d1886f8bcd3ee3df",
+    "new": "0xa86df102f7f8f7c3c082a7b0123d997f0cfa68b1",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xfc9b16a3cdc0c2fc3c16bf0f4c2321f8036352ec",
+    "new": "0x21fd5a5a41ac408ac81ba0ec5bee81a1903474ec",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x61cc0e1ba219f11b1de3e94dcdb958804ec3cd78",
+    "new": "0x8a055421ff2b8d38082a0afd5442342f04ea7736",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x0125e36e0515a84b7a4cacb463829b8dd41bd314",
+    "new": "0x5c08e14f5741ff7ceea43de66c3c5008b1355e9b",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x017986212979dbf933a5a1ae7077c6d9a02030b8",
+    "new": "0xd078073f50edc5b59b8c28837c0f33bb21a6ee8b",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xdcf15bf4dde76fe2bd20878d0d62f36360a6474f",
+    "new": "0x4af25d499ea9b3d064e1940258e9aac272ca8d74",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3b11557f03daa281be61b6fd2a91ef8b683440cd",
+    "new": "0xb2ab36fc53ebd1f62f17a2c7e4830a4c4bdb05c9",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x34350e6c0e6bc75612141466394aef9043a373ab",
+    "new": "0xdc0b62fd77e84ea91642699e302a140aa290a60b",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xa6d9059394fac2bb92a85cd7f3f5815f6e66effb",
+    "new": "0xc70bff7e17c688300a4c5fd5eaa7eeb9212a23e8",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5d7b8d4bea9696db723485d51e6319d1f9731392",
+    "new": "0x2ba06d2dc3aaed98c1e4bd01d23e1c8acfee3b38",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x1ecf9bb5ca9ebf8229c2035ecbad7f08699f02da",
+    "new": "0xd1e0f3c0ee320f497dfa00a5d59d9a4d67686d3e",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc24d949d28947284e10ed162abaffd9d5dc25b79",
+    "new": "0x978e82eb5917a6b3535d1748375c7389281f0e10",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb31b7b9c6fbb15e58c1f8dea2af9b02dfeecf3b9",
+    "new": "0x01c62f8bbcf7f0f4b872e4d83dce16e61c079b7d",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x4e724aa555459c83d241b833c1f571030cd16182",
+    "new": "0x36bb90ab9cb57398fa24d57f6d5989e1493c27bd",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x484d33401cd07676077040c56a264b0751a72e74",
+    "new": "0xa204c900d846b8d7960bdb35d68ad341bdd06184",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc4b73c3a27964438616315586c9f78343556269e",
+    "new": "0x0948379167c6a587c5f2a043db277b197f9d4f8c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x515e79b9de0a2b57d2abe9a012c050871ac3d1da",
+    "new": "0xd4dd93f090a4bcc98e1c3b0e76f3873cb755fb63",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x548fac51a7518ad8d7139b199fec71263340994a",
+    "new": "0x30df16cd7d612c5b25beb0331486b127a42ac371",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xfb763d3b7c618a3ea7eeb9c63ba98ec625decf52",
+    "new": "0xabe031d9b1b6f963e0f656c3024451e5c4e80069",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5a66be4c8add8772cdf1b3a26c48b24d494ce097",
+    "new": "0xf8965829419df9912e2e3cb5bdb0dce1b29484e1",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6543a5ee3172353f114474e6e516da4a9f40916e",
+    "new": "0x4129ab5bdd02ff4637ddeb4ce5c4218dec4d8db0",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xa260e6b82a89504f6917060deac0ccac11bb4d12",
+    "new": "0xd47a046838fbb83a002ee502569c6c2af3105269",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc456d1720387ed9191f1ffa69616beb9a785e9c3",
+    "new": "0xfefa329fc18c4cfeb493ad0a96a78da8a38d2273",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xbdeaf20310ceaa50924644403ba3873d4a0e576d",
+    "new": "0xdabf92fca32cb047a7224cf74220a15278724259",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3d67cbc10e6298b8a65563a791e25602b2774dd0",
+    "new": "0x90572799de1047d0e05162d8fa1761b45d9a958c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x614e3b16a168dc5fef2ea87508be6ee46f9bdc0e",
+    "new": "0x20716847e7e5a7e44b4864b839cfff30ff3006d6",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x65bb5a2b2bd1f47710e9ecc14ef8000595ff9561",
+    "new": "0xdb272f25d214425df60474478820c262783ea4f7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9a89f72879dada789ff86c8339cade04a8d353ae",
+    "new": "0x7942efae2796caf31f734d1f53a6c457eb0b3157",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x92a23c9a1dea13c62006134c755ed6055b5acda0",
+    "new": "0xc0817e26a97fe6066321123fade456f96578ee1c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x54d6db67b75e9f984a2b49053228359c731fa7ac",
+    "new": "0x377f21a3e9365c58ee3d076e5a951d45b9441a98",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x667b03579989b00360b6a998ceb20c9705d98020",
+    "new": "0x40254098723c038c176f20d8a0cbe7179d1108d5",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc32d9d0a2390cc0bfc0f2187943a7f6a85d8f4ab",
+    "new": "0x16f2f6eb3afd95ce06ed9b700ec7d44faf380c8a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9ef02c7b837219e6a7de18f0815216c59f5b8ca1",
+    "new": "0xf5183c72554c666350856e9d817320b6430733b7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x4972b2cc470f1c8e14b141eb12f8e54d32dff661",
+    "new": "0xff77772b14a8ed350e397580dfbe53ffd137d806",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x361931edce07f303b7d74b0b3efcc2dbc922ac7f",
+    "new": "0x2a5a847dfef231ed9a680d32c3bb39582423e72f",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xda794c3ddbe387b7c5bb2b1cb4fbb8e1b708afb5",
+    "new": "0xfeef45e298b79618057ddd5aaaff3f5dbb7dbb16",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb5edff66370005ea1eb344652b3f53dac43e7926",
+    "new": "0x703cc5f0105de4527a5c04f4b38eaa6722ec3764",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3f80b026da88facd2d0501b2548327b94d4f7b8b",
+    "new": "0xef8f67f81e6a43da67a944bb6dbba3f4dc27f9dd",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xab12253171a0d73df64b115cd43fe0a32feb9daa",
+    "new": "0xbbff7c2df218839895695c6d13bbfd4acdf8191d",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x94122e668bafa2943511bdbace62a6e3245889f7",
+    "new": "0x13988cef5721a77e9a873b9c988559abd698516a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x726af899ed442c9f45a49430f44bf47bfdccffca",
+    "new": "0x3feb27be1adb28dfe6e78a619b31f447e69087e8",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x89f4c5df38596c4fcca64e7b7c104dff43400e2f",
+    "new": "0x288cbaf68b9fc93ea821366ff0c26e1964b354aa",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x059d2f517b56c0a711d2f244f1d98ad41cb02ebb",
+    "new": "0xcd3a70c84db2bc9c2b5aac887cf0c85d25498692",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x7a243437d599b5c5c0e5066b802e394a6b6df38d",
+    "new": "0x08d8db85ad681fa6a80c0d1fab9312f00d1a1888",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xcd2f1d1037814f0067ce1dbb3d89b8e8cc1459ae",
+    "new": "0x2208a9e3ca038f71e319be0f453912283850902e",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x354c60d358b6efcca7e4df7b9994f2475babde06",
+    "new": "0x826052ccf29b2460361345880a87ed46e6b88165",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xd78d569bded049bcbb26c68204d40a801ffac805",
+    "new": "0xa15ec06aaa123fe816281bb455240d9b42edcbbc",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc45452081a8b65ce8f11253d49e264cc2fc40dfa",
+    "new": "0x9b9138241590e5058f374a70f74512b96ded56a0",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc253bca1545e7d6d39173ed70953fe63fa24c9fb",
+    "new": "0x0493b6988add9a904926937abd80891c6f0d42ff",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb58290808670d70fb77410a16726df5afd7ab947",
+    "new": "0x826052ccf29b2460361345880a87ed46e6b88165",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xdbcecd4d8249c6b9843e397f6d9bbcd576b1f096",
+    "new": "0x776defc2147a9fabd011b8511ebdd8da43ed105e",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x74f232c03c58d16e6a6433b1b54496cf0103bb20",
+    "new": "0x0bf45d68e6313dfd5464147373ac4a379c146a58",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xce6b16b2c3eb03f4d71780a2e29d3830f90d803a",
+    "new": "0xfab1420c84ff5e058b8ad12604d24247e268f362",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x1c365a53b77517ece7e33881292f55ae32a9cbf6",
+    "new": "0xcf1cf4ec4be5319032e14bc68be0cbfc9f5f32b4",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x03293f7ebf3ec55d3991259a8c60b9ef6a9e053b",
+    "new": "0xef9f7b9a494faf74ddd8ef3c428c065594bca99a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x4003ff2db9f3922f419e0c848313876e53d83712",
+    "new": "0x3d224d746780e7570dc932ea736413abfdcd3a70",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xf86a60f8b77361414cefdd4798e1b269771f1ea1",
+    "new": "0xa35b95b60af5205dbd02571d8d72ef83f79a28af",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb3d07b07a1b22019b2dd50f7c1ea49408e52bf19",
+    "new": "0xd364d56e2e77ab95491a26f1376d961a9a9692d7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3f2754f4d2d28367adb31216ff3560a82e82bdc7",
+    "new": "0xb4b04564f56f4795ea4e14d566af78da54a99980",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x96db4a15da99f2dc67824dd14240edb18ba8cab0",
+    "new": "0xc989fe4cf6ddb44d09b1f96546ab554d114ac540",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x691e033b941cf820d6bcd1f618884e64a003ea47",
+    "new": "0xae667ed58c0d9198fc0b9261156d48296c1bb3da",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6056e216e9e90cf34fdbfb9a6ec452d3afbac3b9",
+    "new": "0xa53a13a80d72a855481de5211e7654fabdfe3526",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xa19738875fcdbad6b515cbf1cfb970eac4d075fc",
+    "new": "0xdb5bc04bad830949bcc373bb3148500bc9202a75",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x98b1ac76ec5370e951371078df075f47b7b03e11",
+    "new": "0xc6e61b83dfdd62c2a8102846d23865e2c8ef676f",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x991575c145fd04f5d09f2dc871358248f48ad1c2",
+    "new": "0xa6555a947770a0073272abe4f600c3203fdecf46",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6ed69cb040b92a7f54aa6a4322175201dbfe3363",
+    "new": "0xdd45dc68d508a0c4da089ae9ba5a923cb7c39f0e",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xea173f401253436102da7a77548fc99322bd76b8",
+    "new": "0x04ecaede106078c2948534c5fdf128941c7fb638",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3a1d1c1928497a5a71d783f875a678399ad92507",
+    "new": "0xf98d1fba8868506e5d4e77c9a7f35d4b8a5b8e82",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xd02f9772f50202877ebf7cefbb93e663cd5d4c98",
+    "new": "0x5bab5d7727f3966d4bf83c6e7b32514b3969aabd",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x68a3fe4875731d90839b9d1398f0b494f23b139d",
+    "new": "0x3d9f4b1e86082b40a9292d46d8bc61adf1130b1a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x815e2c87dbd02c21a782bda50777523f91eeeb78",
+    "new": "0x5f67ffa4b3f77dd16c9c34a1a82cab8daea03191",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x7a077c67ed5bafa744c71381d85a8d9f225247d8",
+    "new": "0x493946748ef9647a46962b96c6e717e188e1d91a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x809f088058e721613540097be3e2d654ead5ef06",
+    "new": "0xe6f39668b6fca33ed1dbd961cd70df1f6ba26878",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5f80e468ebc7866dc27c62f9877dae52d997da53",
+    "new": "0xa15d2b8acff7fec8e55653635aaac785881f394c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x01b05d6380701fab2e233049866787a4996eb6fd",
+    "new": "0xa1d8e3321ec32beac7dddb52a1cc5744a5e392da",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xcd8a3b6cc632595385a1b03fd044adc8e04dd62e",
+    "new": "0x478a2d55d111d4dd18e1ead19e60f64b40c94bdf",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x0b29985af3c2c70e946e2ed345d87a763f79b321",
+    "new": "0xdfad0c01a28d9d95486bb3f0821e4f5644704fa7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6c235a2d503de0e61e85da4f13005bdfa26e50f0",
+    "new": "0xdce00637c4db93e4f0e47d9dedead7491264423b",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5f2502385c7fe9bee1fb19376b1c6c83b6f279b4",
+    "new": "0xed05f1852fec92e7d980a1ed1784b4c8604bb35a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3770c71a1860135d7ad749f3ee1da3cf23087a65",
+    "new": "0x8a20a065b2f2541e3e16f2dcb58211afdfb998a6",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xafe489cdd6267e6ecf0942c4a58f6d9a4c55687d",
+    "new": "0xd2d97836fe74aa39c9ec1cff9ca390176f04d654",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x8aaa73b61441fb0b0a0dbd01e63bdfd3517e2aeb",
+    "new": "0xe1cab7ca42b6525b3d85a822f31df2dcf29154ad",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x348b23a4139ddc4b15964754ae07c4b66ee7c8d2",
+    "new": "0x801dfc2f90f18cade1f9169f485d931fef0a086a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x33a6939c2ac59dd29ad890336be87149c15f7acd",
+    "new": "0xd6ab0c7748306d84df130ad37afd3923aedb0231",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x689773905a0984e9ed727eb8363106adfe4d59e3",
+    "new": "0x349790f5197946d6cccbe49ebfd05d93ae950c38",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x1434456e89be6d350d6abf2d8c8894ddb004cfba",
+    "new": "0x82b1ebaedeb73f5b5f2a40ac88b694a94ced76a6",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x8f2e0ccb64949d6edc14a553fbde70790efdc6ab",
+    "new": "0xc4c65c315dec7f1eda06cac9852b62667e559202",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x253ad24819a8dee866b8196dcc9326e5b7727f3d",
+    "new": "0x4d935df134022ebd54df7c18ebd9516f61dc0d32",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x9b195ce89d994e7a66ecf47155d0b28dae19d8a6",
+    "new": "0xabe3c44149905022e0219d2fa9a40ef9e11edb7d",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x93bf5f563566b89fce150536d94c6f49bb08f158",
+    "new": "0xf2f67e1d600337e082ea61b7784119244d9c304c",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5f3385f545f7070881ec2425f3cd2dfbfbeac5d1",
+    "new": "0xf7089b28382f99bcb527093851cd75bb044a16be",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x52c05a4db95ed98ba41522790bb34c293cc9a2c6",
+    "new": "0x19fe9e4ce9f361f86e7178d90e98da01c964e232",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x0078678a0e199f9442a5b729284b7e71980da4ca",
+    "new": "0x3942ae3782fbd658cc19a8db602d937baf7cb57a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x93f1538702e807a04f3e01c9cc7cc4f714d1f619",
+    "new": "0x8dc4310f20d59ba458b76a62141697717f93fa41",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xeb398946206653cc540fde0cb2505d5ed5d3250e",
+    "new": "0xfe2b9d7eb652db625281ae2a0bf5fa9494866f36",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x4876a43304640a02fc8efab117056397c0e5ecad",
+    "new": "0xceac2cf1cd6a135fe4d4fa072ed0bb24e8b1e7ca",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xed5bbc441ba86bf7c0dd9fc86100083b245d1ecb",
+    "new": "0x734e0c41e3fc93192325b4cbf2312c9f48c93984",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb8eed8d466c543e5bd93769b7baa395ab7e40b99",
+    "new": "0xbc1a38174a4a35a88e1e8b9559b4115d11a66fb0",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5d619f3e626063ac5e9c0032840126dc8030b42f",
+    "new": "0x784f04b1105cc0c2495c2acc6ac504f2b5fa2876",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x49080026589bad3c6c1a9ed98f7754a263cf47f0",
+    "new": "0x7022a51609082b9f202fe771d4bb003352542257",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x46b87e535e388876a1c0566897046b470e58b0f6",
+    "new": "0x2e42c162eae12b5b8f9e1f9da0981e328284d253",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x99fa739691498037263092b7d4e48529b7026bf9",
+    "new": "0x97b2589f10e12c1258d99e36c178e1a292924b42",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xd958ebf3c2c23eda32889ff83758a203998445cd",
+    "new": "0xf62fc031b68789a254a2857041485a611b187dd4",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x643d460aa3c29af99e8e2008abcb290d1c2b3bbf",
+    "new": "0x91370264b403c3ea0993cd2e1f59da4d34e7af0d",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x5f7fd7cb84a90a1799c61deefe194b4fc778fff5",
+    "new": "0x91ef752e6d0c40ea0b1d542b440ba4cb35b3ac38",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xba9440b4875ecc20f67e7937b3fe53289f7e4450",
+    "new": "0x002d036462607e32db627f818b01cfb04824ac42",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc4906f9017fa7bcc9598ef3425d58a5dc3289e82",
+    "new": "0x0cdd68298cde947b67184e69d35afe9399355b75",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3c9043cd6a5480037e410050e73896595a3c0c70",
+    "new": "0x48b49067d135e3e0198f03492a788a8cc543c633",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc01ab27a290a695139980257d74aed423fca538a",
+    "new": "0x5fd80c54767d6c038ef361da38ddacc2347b166a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xd976e290e706c73a36ad2a9d0973c057587966e1",
+    "new": "0xa342418abb57ef6ba9831d4ba104109d39ef7fac",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x84c1973dd8e222e88b9e9a50eb9e5cbb40b66bb5",
+    "new": "0x905272e589418183a7177b0689eb9d0ffc7f7dce",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x1dca56eed858a5a8f44caaae091bd1c6eac5be5c",
+    "new": "0xecd793a0a99b60896226437105ef8f7d46a090fb",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x60b666c0549d66a41b848b7a1dbd28a2448485b8",
+    "new": "0x01a7e44c9c8495f1fdac72298a3c0ebac9f58a55",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x66a9be59d0f8487ea1a9ce4d0b523fc7df5abaf9",
+    "new": "0x42c9bb4fb27378220ee628bf2b5d11a794c05d29",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xf04d715bb0b50821ec58f41cd39125e83dbd55c9",
+    "new": "0xd2ab811da8a521062b56a64d521d6d4fcb76bca0",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x7d5d15db17c26726caf72ac1c2fa95fb8bdaea4a",
+    "new": "0x5cb9fd98520366477a0b8bbaeb7524609343046a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xb17a11a1ab85b6e2b9844f20c292022f70786034",
+    "new": "0x356c713ba21730dbed6622db7e048a1a21d6e08e",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xf1c4021b9a03957d836d9226f02ecd92c1aaaf16",
+    "new": "0x9b9138241590e5058f374a70f74512b96ded56a0",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x1cde574fee978e867f1e2739325a71570104776a",
+    "new": "0x819fec659e1c225ce330b02e01f1e4c629e92a7a",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6f2eb66d513213bae09761975dd357a027526da6",
+    "new": "0x2f4ae1e829c98d54ee3ec96097cdf4ae7aa1a19b",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x3fece306e04d5ce67ee7a431afed28f78d3a9ed5",
+    "new": "0xa807db9d6014610809a3d86f334c156cc9db6a72",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x80c95367268a2a5acb83fa615919e9945ea2f276",
+    "new": "0x9b9138241590e5058f374a70f74512b96ded56a0",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x468c1bafc5114c99bca5c12dcfb48d1ee6de9c1a",
+    "new": "0x80edff16578aa4a0a38913db107e2061f05903d4",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x8ad9b5838154598352da8f127e4dcd2cad12a8d6",
+    "new": "0x85b6f6c8198699d7371bf06643fb7621b1bdb6d7",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x01496dfdadadcc09834557c14157ea744597316b",
+    "new": "0x971307ebeed0c84a1fe5eb8005bf654bc552e33d",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xbb899f5b9e06391e52a2f3afabf260919c12eca6",
+    "new": "0xbf132199dee064fef7b6c9b70ad7fb791815cba2",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xc3a0571be4b447c024bfdd806095a685441625b0",
+    "new": "0x79c6174f46bd6a90f8d775887f90fbe7ba8a2ae3",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x6df84369c65d6264cb94cc9372c818bdd0487198",
+    "new": "0xe354765a9e1695c8e8b6fa0ad1bca1c77cf89eff",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xabcac34b72a597f1bac494cb7c8252c2ec24e5c1",
+    "new": "0x00ee80c322d6e956d2629a73223605bbda946f2d",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xddb6e8283475483b5aac4b8454388ded2fc42d26",
+    "new": "0xe6306465c8ed655a6ddb44b1dd8b1faa71a59215",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0xd10742a855e67c3c3d9b12354aa45f79a0050cd9",
+    "new": "0x27a86abf8ddcb96ce1b822eb883fd03d795de462",
+    "remapping rationale": "minted to new address"
+  },
+  {
+    "old": "0x0611f249c4d3b791fbc77b9b7c10e4b84261e6cf",
+    "new": "0xed8689986d8b1cc5a8b9d2acf59cc84c43e021b6",
+    "remapping rationale": "minted to new address"
+  }
+]
